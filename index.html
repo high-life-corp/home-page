@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社High Life | テクノロジーで未来を創る</title>
+    <meta name="description" content="株式会社High Lifeの公式サイトです。事業内容、会社概要、採用情報などをご覧いただけます。">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts（フォントの読み込み） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo"><a href="#">High Life</a></h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#about">私たちについて</a></li>
+                    <li><a href="#service">事業内容</a></li>
+                    <li><a href="#company">会社概要</a></li>
+                    <li><a href="#contact" class="btn-contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- メインビジュアル（ヒーローセクション） -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">未来を創る、<br>確かな技術力。</h2>
+            <p class="hero-text">私たちは最新のテクノロジーを活用し、<br>医療の未来を創造・提案します。</p>
+            <a href="#service" class="btn-primary">詳しく見る</a>
+        </div>
+    </section>
+
+    <!-- 私たちについて (About) -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">私たちについて</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>常識にとらわれない発想で。</h3>
+                    <p>変化の激しい現代において、既存の枠組みにとらわれない柔軟な発想が求められています。私たちは創業以来、新しい価値の創造に挑戦し続けてきました。常に成長し、社会に貢献することが私たちの使命です。</p>
+                </div>
+                <div class="about-image">
+                     <img src="ロゴ.png" alt="会社ロゴ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 事業内容 (Service) -->
+    <section id="service" class="section bg-gray">
+        <div class="container">
+            <h2 class="section-title">事業内容</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="icon">💻</div>
+                    <h3>遺伝子関連データ解析</h3>
+                    <p>医療機関さまよりお預かりした遺伝子関連データを解析し、フィードバックを行います。結果の解釈から説明までサポートします。</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🧪</div>
+                    <h3>生体試料保管事業</h3>
+                    <p>独自に培ったプロトコルをもとに生体試料保管システムを開発しました。お預かりした試料を高品質な状態で保つために厳密な管理体制を整えています。</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🏥</div>
+                    <h3>医療コンサルティング</h3>
+                    <p>SEO対策、広告運用、SNS活用など、Webを通じた集患と売上向上を支援します。クリニックのブランド価値を高めるデザインを提供し、税務面を含めた経営コンサルティングを提供します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会社概要 (Company) -->
+    <section id="company" class="section">
+        <div class="container">
+            <h2 class="section-title">会社概要</h2>
+            <table class="company-table">
+                <tr>
+                    <th>会社名</th>
+                    <td>株式会社High Life </td>
+                </tr>
+                <tr>
+                    <th>設立</th>
+                    <td>1981年3月13日</td>
+                </tr>
+                <tr>
+                    <th>代表者</th>
+                    <td>代表取締役 樋口 淳也</td>
+                </tr>
+                <tr>
+                    <th>資本金</th>
+                    <td>1,000万円</td>
+                </tr>
+                <tr>
+                    <th>所在地</th>
+                    <td>〒211-0012 神奈川県川崎市中原区13-7 1906</td>
+                </tr>
+                <tr>
+                    <th>事業内容</th>
+                    <td>遺伝子関連データ解析事業、生体試料保管事業、医療コンサルティング事業</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- お問い合わせ (Contact) -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">お問い合わせ</h2>
+            <p class="contact-desc">お仕事のご相談やご質問など、お気軽にお問い合わせください。</p>
+            
+            <!-- 【重要】ここにFormspreeのURLを入れてください -->
+            <form class="contact-form" action="https://formspree.io/f/xlgwjoea" method="post">
+                
+                <!-- 送信完了後に thanks.html へ移動する設定 -->
+                <input type="hidden" name="_next" value="thanks.html">
+                <!-- メール件名の設定 -->
+                <input type="hidden" name="_subject" value="Webサイトからのお問い合わせ">
+
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required placeholder="例：山田 太郎">
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required placeholder="例：info@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">お問い合わせ内容</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="ご用件をご記入ください"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">High Life</div>
+                <ul class="footer-nav">
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#about">私たちについて</a></li>
+                    <li><a href="#service">事業内容</a></li>
+                    <li><a href="#company">会社概要</a></li>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+            <p class="copyright">&copy; 2026 株式会社High Life. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
